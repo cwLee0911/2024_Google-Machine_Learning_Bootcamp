@@ -1,0 +1,4 @@
+https://www.kaggle.com/competitions/playground-series-s4e8/data
+
+Kaggle Competitions Playground - Binary Prediction of Poisonous Mushrooms
+Result : Top 4%
