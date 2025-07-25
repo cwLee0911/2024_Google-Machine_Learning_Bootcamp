@@ -1,5 +1,8 @@
 https://www.kaggle.com/models/chlee0911/trained_model_unmerged
 
+Dataset Used: https://www.kaggle.com/datasets/fabdelja/autism-screening-for-toddlers/data
+(QCHAT Dataset) A1 to A10
+
 Model Details:
 Overview I have developed the Gemma2-asd model by utilizing the Quantitative Checklist for Autism in Toddlers (QCHAT-10) dataset to fine-tune the base Gemma2 model. The primary objective of this initiative is to train the Gemma2-2b-it model to create an explainable AI system tailored specifically for QCHAT assessments. This methodology aims to add explanations to the diagnosis of ASD in early childhood. Therefore, the model is an assistant explainable model specifically for ASD.
 
