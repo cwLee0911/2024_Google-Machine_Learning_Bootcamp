@@ -1,0 +1,12 @@
+https://www.kaggle.com/models/chlee0911/trained_model_unmerged
+
+Model Details:
+Overview I have developed the Gemma2-asd model by utilizing the Quantitative Checklist for Autism in Toddlers (QCHAT-10) dataset to fine-tune the base Gemma2 model. The primary objective of this initiative is to train the Gemma2-2b-it model to create an explainable AI system tailored specifically for QCHAT assessments. This methodology aims to add explanations to the diagnosis of ASD in early childhood. Therefore, the model is an assistant explainable model specifically for ASD.
+
+Architecture Gemma2-asd employs the Gemma2-2b-it model, chosen for its robust capability to handle complex instructional content and its efficient architecture. To optimize the training process, I integrated the QLoRA method, a respected Parameter-Efficient Fine-Tuning (PEFT) technique, which significantly reduces memory usage while preserving performance levels.
+
+Training Data The training dataset includes Question-Answer (QA) pairs, derived from the QCHAT-10 questionnaire and supplementary documents pertinent to ASD. Employing the sentence transformer model ‘all-MiniLM-L6-v2’, I identified common patterns aligned with DSM-5 criteria across the questionnaires. This approach resulted in the generation of approximately 500 QA pairs to effectively fine-tune the Gemma2 model. The QA pairs were crafted using the GPT-4 model to ensure clarity and coherence, thereby enhancing the quality of the dataset and streamlining the entire fine-tuning process.
+
+Testing Data The testing dataset comprises QA pairs created from a dataset that, while similar, is distinct from the training data. This strategy ensures that the test scenarios are unseen by the model during training, incorporating diverse linguistic variations to precisely simulate different contextual analyses of QCHAT-10 results.
+
+Validation Data The validation dataset closely mirrors the training dataset to ensure accurate monitoring of the model’s training progression within predefined parameters. This dataset is crucial for continuously validating the model’s performance and adjusting its accuracy throughout the development phase.
